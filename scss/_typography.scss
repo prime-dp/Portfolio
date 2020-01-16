@@ -1,0 +1,91 @@
+html {
+  font-size: 40px;
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  color: $main-text-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  line-height: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.title-section {
+  color: white;
+  line-height: 1;
+  color: rgba(255,255,255,.8);
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 2px 2px 2px rgba(0,0,0,.5);
+  h1 {
+    margin-bottom: 3vh;
+    font-size: 5vh;
+  }
+  p {
+    font-size: 4vh;
+    margin-bottom: 3vh;
+
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+}
+
+.education-item {
+  ul {
+    margin: 0;
+    list-style: circle;
+    padding: 5px 20px 5px 30px;
+    li {
+      font-size: .8rem;
+    }
+  }
+  a {
+    font-size: 1rem;
+    text-decoration: underline;
+    margin-bottom: 5px;
+  }
+}
+
+.about-me {
+  li {
+    span {
+      font-weight: 700;
+      color: black;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+.education-item-title {
+  color: rgba(255, 255, 255, 0.8);
+  //text-shadow: $header-text-shadow;
+  text-align: center;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1rem;
+}
+
+.header-nav {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav {
+  text-transform: uppercase;
+}

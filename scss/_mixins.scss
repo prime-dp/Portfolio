@@ -1,0 +1,11 @@
+@mixin pseudo {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+@mixin section-icon ($main-content-color) {
+  font-size: 15rem;
+  text-shadow: 3px 3px 5px rgba(89, 112, 149,.6);
+  color: $main-content-color;
+}

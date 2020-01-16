@@ -1,0 +1,106 @@
+.show-link {
+  opacity: 1;
+  transition: ease 1s;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  header {
+    .photo-wrap {
+      margin: 10vh 0 10vh;
+    }
+  }
+
+  .portfolio-slider-wrap {
+    .custom-nav {
+      .owl-prev, .owl-next {
+        font-size: 30px;
+      }
+    }
+  }
+
+  article {
+    margin-top: -40px;
+  }
+
+  .link-up {
+    width: 50px;
+    height: 50px;
+    i {
+      font-size: 30px;
+    }
+  }
+
+  .header-nav {
+    position: sticky;
+    top: 0;
+    padding: 0;
+    nav {
+      margin-top: 0;
+    }
+    ul {
+      li {
+        text-align: initial;
+      }
+      a {
+        min-height: 40px;
+        line-height: 40px;
+        display: inline-block;
+      }
+    }
+    .contacts-list-wrap {
+      margin-left: -150px;
+      margin-top: 0;
+      top: 65px;
+      left: 30px;
+      opacity: 0;
+      right: initial;
+      i {
+        font-size: 35px;
+        color: $main-content-color;
+      }
+    }
+
+    .show-contacts {
+      margin-left: 0;
+      transition: ease 1s;
+      opacity: 1;
+    }
+  }
+
+  .portfolio-item-wrap {
+    padding: 40px 80px;
+  }
+
+  .section-title {
+    margin: 60px 0;
+  }
+
+  .send-mail-modal {
+    .modal-dialog {
+      max-width: 500px;
+      .modal-header {
+        padding: 1rem;
+      }
+    }
+    .modal-footer {
+      &:after {
+        top: -25px;
+      }
+    }
+    .invalid-mail, .empty-mail {
+      .modal-footer {
+        &:after {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .title-arrow-wrap {
+    margin-bottom: 100px;
+  }
+}

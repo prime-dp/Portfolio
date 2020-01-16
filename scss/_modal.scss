@@ -1,0 +1,95 @@
+.send-mail-modal {
+  button {
+    outline: none;
+    box-shadow: none;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .close-modal {
+    right: 15px;
+    top: 10px;
+  }
+  .send-mail-button {
+    background-color: $bg-main-color-1;
+    border-radius: 40px;
+    font-weight: 700;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .my-mail {
+    font-size: .8rem;
+    line-height: 1.5;
+    font-weight: 700;
+    &:last-of-type {
+      color: black;
+    }
+  }
+  .form-control {
+    border: 1px solid rgba(0,0,0,.3);
+    &:focus {
+      box-shadow: 0 0 0 2px $bg-main-color;
+    }
+    &:first-of-type {
+      &::placeholder {
+        font-size: .7rem;
+      }
+    }
+  }
+  .form-group {
+    &:first-of-type {
+      margin-bottom: 30px;
+    }
+  }
+  .modal-dialog {
+    max-width: 95%;
+    .modal-header {
+      padding: 1rem 1rem 0 1rem;
+    }
+    .modal-body {
+      padding: 1rem;
+    }
+  }
+
+
+  .modal-footer {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "Некорректный формат E-mail";
+      display: inline-block;
+      color: white;
+      white-space: nowrap;
+      top: -50px;
+      left: 50%;
+      padding: 0 8px;
+      transform: translate(-50%,-50%);
+      background-color: red;
+      border-radius: 8px;
+      opacity: 0;
+      font-weight: 600;
+      font-size: .8rem;
+      z-index: 1;
+    }
+  }
+
+  .invalid-mail, .empty-mail {
+    .modal-footer {
+      &:after {
+        top: 0;
+        opacity: 1;
+        transition: ease .5s;
+      }
+    }
+  }
+
+  .empty-mail {
+    .modal-footer {
+      &:after {
+        content: "Заполните все поля"
+      }
+    }
+  }
+}
