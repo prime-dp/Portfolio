@@ -319,7 +319,7 @@
 
 </article>
 <footer class="footer-wrap d-flex justify-content-center">
-    <a href="" class="git-link">Исходники этого сайта на GitHub</a>
+    <a href="https://github.com/prime-dp/Portfolio" class="git-link" target="_blank">Исходники этого сайта на GitHub</a>
 </footer>
 <script src="./js/jquery-3.4.1.min.js"></script>
 <script>
