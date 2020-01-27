@@ -92,8 +92,7 @@ header {
   .header-nav nav {
     margin-top: -100%;
     -webkit-transition: ease 1s;
-    transition: ease 1s;
-    padding-left: 30px; }
+    transition: ease 1s; }
   .header-nav .show-menu {
     margin-top: 0;
     -webkit-transition: ease 1s;
