@@ -39,7 +39,10 @@
     top: 0;
     padding: 0;
     nav {
+      position: relative;
       margin-top: 0;
+      transform: translateX(0);
+      background-color: initial;
     }
     ul {
       li {

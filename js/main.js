@@ -44,8 +44,8 @@ $(document).ready(function () {
                 } else {
                     if (scrolled) {
                         $('#contacts-list').removeClass('show-contacts');
-                        $('#nav-icon3').removeClass('open');
-                        $('#top-menu').removeClass('show-menu');
+                        //$('#nav-icon3').removeClass('open');
+                        //$('#top-menu').removeClass('show-menu');
                         $('#contacts-list-button').removeClass('active-button');
                     }
                 }
@@ -80,6 +80,7 @@ $(document).ready(function () {
             $('#contacts-list').removeClass('show-contacts');
             $('#nav-icon3').removeClass('open');
             $('#top-menu').removeClass('show-menu');
+            $('body').removeClass('overflow-hidden');
 
 
         }
@@ -112,7 +113,58 @@ $(document).ready(function () {
             $('#top-menu').toggleClass('show-menu');
             $('#contacts-list').removeClass('show-contacts');
             $('#contacts-list-button').removeClass('active-button');
+            $('body').toggleClass('overflow-hidden');
         });
+
+
+        //ios menu scroll
+        var FenixUI = {
+            overlayModalIos : function($block) {
+                var _overlay = document.getElementById($block);
+                var _clientY = null; // remember Y position on touch start
+
+                if(!_overlay) {
+                    return '';
+                }
+
+                _overlay.addEventListener('touchstart', function(event) {
+                    if(event.targetTouches.length === 1) {
+                        // detect single touch
+                        _clientY = event.targetTouches[0].clientY;
+                    }
+                }, false);
+
+                _overlay.addEventListener('touchmove', function(event) {
+                    if(event.targetTouches.length === 1) {
+                        // detect single touch
+                        disableRubberBand(event);
+                    }
+                }, false);
+
+                function disableRubberBand(event) {
+                    var clientY = event.targetTouches[0].clientY - _clientY;
+
+                    if(_overlay.scrollTop === 0 && clientY > 0) {
+                        // element is at the top of its scroll
+                        event.preventDefault();
+                    }
+
+                    if(isOverlayTotallyScrolled() && clientY < 0) {
+                        //element is at the top of its scroll
+                        event.preventDefault();
+                    }
+                }
+
+                function isOverlayTotallyScrolled() {
+                    // https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollHeight#Problems_and_solutions
+                    return _overlay.scrollHeight - _overlay.scrollTop <= _overlay.clientHeight;
+                }
+            }
+        };
+
+        FenixUI.overlayModalIos('#top-menu');
+
+
     } else {
         $('.parallax-window').parallax({imageSrc: '../img/main-bg.png'});
     }
