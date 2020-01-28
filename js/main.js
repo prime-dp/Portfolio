@@ -162,7 +162,7 @@ $(document).ready(function () {
             }
         };
 
-        FenixUI.overlayModalIos('#top-menu');
+        FenixUI.overlayModalIos('top-menu');
 
 
     } else {
