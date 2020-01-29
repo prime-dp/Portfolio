@@ -36,7 +36,6 @@
 
   .header-nav {
     position: sticky;
-    top: 0;
     padding: 0;
     nav {
       position: relative;
@@ -55,6 +54,8 @@
       }
     }
     .contacts-list-wrap {
+      transform: initial;
+      position: absolute;
       margin-left: -150px;
       margin-top: 0;
       top: 65px;
@@ -64,6 +65,9 @@
       i {
         font-size: 35px;
         color: $main-content-color;
+      }
+      a {
+        margin: 8px 0;
       }
     }
 

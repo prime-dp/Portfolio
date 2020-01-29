@@ -108,12 +108,12 @@
 </header>
 <article class="" id="main-content">
     <div class="header-nav d-flex wow fadeInUp" data-wow-delay=".4s">
-        <div class="contacts-list-button-mobile-wrap d-flex">
+        <div class="d-flex">
             <div class="contacts-list-button-mobile d-flex align-items-center justify-content-center d-lg-none" id="contacts-list-button">
                 <i class="far fa-comments"></i>
             </div>
         </div>
-        <div class="d-flex flex-row flex-lg-column justify-content-between align-items-center contacts-list-wrap text-center position-absolute" id="contacts-list">
+        <div class="d-flex flex-row flex-lg-column justify-content-between align-items-center contacts-list-wrap text-center" id="contacts-list">
             <a title="Viber" href="viber://add?number=380995606124" class="d-lg-none"><i class="fab fa-viber"></i></a>
             <a title="Telegram" href="tg://resolve?domain=prime_dp" class="d-lg-none"><i class="fab fa-telegram-plane"></i></a>
             <div class="phone-numders-wrap d-none d-lg-block">

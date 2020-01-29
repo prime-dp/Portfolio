@@ -5,7 +5,7 @@ html, body {
 header {
   min-height: 100vh;
   .photo-wrap {
-    margin: 120px 0 10vh;
+    margin: 150px 0 6vh;
   }
   .photo {
     height: 30vh;
@@ -39,7 +39,7 @@ header {
 
   .show-menu {
     transform: translateX(0);
-    transition: ease 1s;
+    transition: ease .2s;
     overflow-y: auto !important;
   }
 
@@ -52,7 +52,7 @@ header {
       min-height: 150px;
       line-height: 100px;
       padding: 0 10px;
-      display: flex;
+      display: inline-flex;
       justify-content: center;
       align-items: center;
       position: relative;
@@ -115,13 +115,15 @@ header {
   }
 
   .contacts-list-wrap {
-    margin-top: -100%;
-    transition: ease 1s;
+    position: fixed;
+    transform: translateY(-110%);
+    transition: ease .6s;
     left: 110px;
     right: 110px;
     z-index: 1;
-    height: 100%;
-
+    a {
+      line-height: 1;
+    }
     i {
       margin: 0;
       color: $bg-main-color-1;
@@ -161,6 +163,7 @@ header {
       padding: 0;
       border: none;
       background-color: transparent;
+      line-height: 1;
 
       &:focus {
         outline: none;
@@ -169,12 +172,8 @@ header {
   }
 
   .show-contacts {
-    transition: ease 1s;
-    margin-top: 3px;
-  }
-
-  .contacts-list-button-mobile-wrap {
-
+    transition: ease .6s;
+    transform: translateY(12px);
   }
 
   .contacts-list-button-mobile {
@@ -184,7 +183,7 @@ header {
     z-index: 1;
     border-radius: 50%;
     margin: 7px 0;
-    transition: ease 1s;
+    transition: ease .6s;
 
     i {
       color: $main-content-color;
@@ -195,7 +194,7 @@ header {
   .active-button {
     background-color: $main-content-color;
     transform: scale(.7);
-    transition: ease 1s;
+    transition: ease .6s;
 
     i {
       color: $bg-main-color;
