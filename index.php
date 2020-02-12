@@ -101,7 +101,7 @@
 
             </div>
             <h1 class="main-title text-center">Владислав Саланжий</h1>
-            <p class="text-center">Junior Front-End Developer, верстальщик</p>
+            <p class="text-center">Junior Front-End Developer, <span class="text-uppercase">Html/Css</span> Developer</p>
             <p class="text-center">Днепр</p>
         </div>
     </div>
@@ -225,12 +225,37 @@
                                             <li>Проект на WordPress (страница "КАТАЛОГ ТОВАРОВ")</li>
                                             <li>Шапка скрывается при скролле вниз и появляется при скролле вверх (jQuery)</li>
                                             <li>Модальное окно входа</li>
-                                            <li>Проверка содержимого поля электронной почты на стороне пользователя(JS).</li>
+                                            <li>Валидация форм обратной связи(JS)</li>
                                             <li>Слайдеры (Owl-carousel)</li>
                                             <li>Видео в слайдере (Fancybox 3)</li>
                                             <li>Fontello, icomoon</li>
-                                            <li>Adaptive, Mobile</li>
+                                            <li>Adaptive, Mobile, ios scrolling fix</li>
                                             <li class="list-unstyled"><a class="git-link" href="https://github.com/prime-dp/surfing.git" target="_blank">Исходники на GitHub здесь</a></li>
+                                        </ul>
+                                        <div class="custom-nav">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="owl-item">
+                                <div class="container">
+                                    <div class="portfolio-item-wrap d-flex flex-column flex-lg-row align-items-center">
+                                        <a href="https://prime-dp.github.io/sparkleappz/" class="preview-wrap" target="_blank" title="Кликните для перехода на сайт">
+                                            <picture>
+                                                <source media="(max-width: 991px)" srcset="./img/sparkleappz-mobile.png">
+                                                <img src="./img/sparkleappz.png" alt="" class="img-fluid">
+                                            </picture>
+                                        </a>
+                                        <ul class="description">
+                                            <li>Bootstrap 4, Sass</li>
+                                            <li>Анимация (Wow.js)</li>
+                                            <li>Галерея (Fancybox 3)</li>
+                                            <li>Валидация формы обратной связи(JS)</li>
+                                            <li>Google Maps</li>
+                                            <li>Owl-carousel, Bootstrap carousel, Font-awesome</li>
+                                            <li>Responsive, Mobile, ios scrolling fix</li>
+                                            <li class="list-unstyled"><a class="git-link" href="https://github.com/prime-dp/sparkleappz?files=1" target="_blank">Исходники на GitHub здесь</a></li>
                                         </ul>
                                         <div class="custom-nav">
                                         </div>
@@ -251,7 +276,7 @@
                                             <li>Bootstrap 4, Sass</li>
                                             <li>Анимация (Wow.js)</li>
                                             <li>Видео (Fancybox 3)</li>
-                                            <li>Проверка содержимого поля электронной почты на стороне пользователя(JS).</li>
+                                            <li>Валидация формы обратной связи(JS)</li>
                                             <li>Рабочий анимированый триггер выбора стоимости</li>
                                             <li>Слайдер с отзывами</li>
                                             <li>Font-awesome, Linearicons</li>
@@ -302,7 +327,7 @@
             <div class="content-wrapper d-flex flex-column">
                 <h4 class="section-title text-center">Стек технологий</h4>
                 <ul class="">
-                    <li><span class="text-uppercase">html,css</span> - семантичность,кроссбраузерность.</li>
+                    <li><span class="text-uppercase">html,css,bem</span> - семантичность,кроссбраузерность.</li>
                     <li><span class="text-uppercase">js (es6)</span><span>, jQuery</span></li>
                     <li><span>Bootstrap 4</span></li>
                     <li><span>Адаптивность</span></li>
@@ -310,8 +335,9 @@
                     <li><span>Gulp</span> - browser sync, autoprefixer, sass, clean-css, gulp-terser.</li>
                     <li><span>WordPress</span> - создание тем, натяжка верстки.</li>
                     <li><span>Git</span></li>
-                    <li><span class="text-uppercase">Php</span><span>, MySQL, Ajax</span> - по мере необходимости.</li>
+                    <li><span class="text-uppercase">Php</span><span>, MySQL, Ajax</span> - на уровне работы с CMS.</li>
                     <li><span>Photoshop, Avocode, PhpStorm</span></li>
+                    <li><span>English</span> - Pre-Intermediate</li>
                 </ul>
             </div>
         </div>
